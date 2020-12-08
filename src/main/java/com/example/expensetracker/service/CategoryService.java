@@ -14,7 +14,7 @@ public interface CategoryService {
 	
 	Category addCategory(int userId, String title, String description) throws EtBadRequestException;
 	
-	void updateCategory(int userId, int categoryId, Category category) throws EtBadRequestException;
+	void updateCategory(int userId, int categoryId, String title, String description) throws EtBadRequestException;
 	
 	void removeCategoryWithAllTransactions(int userId, int categoryId) throws EtResourceNotFoundException;
 
